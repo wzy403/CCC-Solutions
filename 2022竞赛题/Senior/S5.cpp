@@ -19,7 +19,7 @@ int dfs(int v, int prev, string s){
                 valid = !valid;
                 break;
             }else{
-                tempCost += tmep;
+                tempCost += temp;
             }
         }
         if(valid){
@@ -52,7 +52,7 @@ int dfs(int v, int prev, string s){
         }
         for(auto &i : m[v-1]){
             int on = dfs(i,v,"ON");
-            int pay = dfs(i,v,"pay")
+            int pay = dfs(i,v,"pay");
         }
         return tempCost;
     }
